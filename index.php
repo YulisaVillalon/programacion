@@ -1,5 +1,4 @@
- <?php phpinfo(); ?>
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +8,7 @@
 </head>
 <body>
     <h1>Hola a una paginita</h1>
-    
+    <?php phpinfo(); ?>
+   
 </body>
 </html>
