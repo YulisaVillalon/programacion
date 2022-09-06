@@ -21,7 +21,13 @@ class Pizza {
     }
 
     getASlice() {
-        let getASlice = (`Dame una rebanada ${this.size} de ${this.name} ${this.type}.`);
+        if (this.slices > 0) {
+            this.slices--;
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     // isPizza(){
