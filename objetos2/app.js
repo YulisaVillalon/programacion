@@ -20,4 +20,5 @@ juan.cut(pizzaMexicana, 16);
 pizzaMexicana.description();
 
 juan.eat();
+laura.eat();
 
