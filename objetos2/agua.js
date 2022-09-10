@@ -1,6 +1,6 @@
 import Bebida from './bebida.js'
 
-class Cerveza extends Bebida {
+class Agua extends Bebida {
     constructor(tipo, cantidad) {
         super(cantidad);
         this.tipo = tipo;
@@ -8,11 +8,11 @@ class Cerveza extends Bebida {
 
     restante() {
         if (this.cantidad > 0) {
-            console.log(`Quedan ${this.cantidad} ml de cerveza`)
+            console.log(`Quedan ${this.cantidad} ml de agua`)
         } else {
-            console.log(`No hay más cerveza`)
+            console.log(`No queda más ${this.tipo}`);
         }
     }
 }
 
-export default Cerveza
+export default Agua
