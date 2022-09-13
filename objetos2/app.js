@@ -1,8 +1,9 @@
 import Agua from './agua.js';
 import Bebida from './bebida.js';
 import Cerveza from './cerveza.js';
-import Persona from './persona.js'
-import Pizza from './pizza.js'
+import Persona from './persona.js';
+import Pizza from './pizza.js';
+import Postre from './postre.js';
 
 
 let juan = new Persona("Juan", 25, "male", true);
@@ -14,7 +15,7 @@ let bebida = new Bebida(1000);
 let cerveza = new Cerveza("Cerveza Oscura", 1000);
 let horchata = new Agua("Agua de Horchata", 3000);
 let jamaica = new Agua("Agua de Jamaica", 500);
-
+let postre = new Postre(10);
 
 console.log(pizzaMexicana.slices);
 pizzaMexicana.description();
@@ -83,3 +84,13 @@ jamaica.servir(500);
 jamaica.restante();
 jamaica.servir(500);
 
+for (let i = 0; i < 10; i++){
+    console.log(postre.cucharadasRestantes)
+    postre.bite();
+}
+
+process.stdout.write("Ingresa tu nombre: ");
+process.stdin.on("data", data => {
+    console.log(`Hola ${data.toString().trim()} ¿Cómo estás?`);
+    process.exit();
+});
