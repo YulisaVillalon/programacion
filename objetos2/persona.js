@@ -9,6 +9,10 @@ class Persona {
         this.servedPizza = [];
     }
 
+    description(){
+        let desc = `${this.name} es ${this.gender} de ${this.age} que ${(this.hungry)?'tiene hambre ':'no tiene hambre '}`;
+        console.log(desc);
+    }
     isStarving() {
         let message = (this.hungry) ? `${this.name} se comería una vaca` : `${this.name} le teme al éxito`;
         console.log(message);
