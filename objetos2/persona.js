@@ -33,6 +33,7 @@ class Persona {
     servePizza(persona, pizza) {
         if (pizza.getASlice() == true) {
             persona.servedPizza.push(pizza.name);
+        console.log(`${this.name} le sirvió pizza ${pizza.name} a ${persona.name}`);
         } else {
             console.log("No hay más pizza");
         }

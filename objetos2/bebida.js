@@ -9,6 +9,7 @@ class Bebida {
     servir(ml){
         if (this.cantidad >= ml){
             this.cantidad -= ml;
+            this.restante();
         } else {
             console.log(`No hay bebida suficiente.`);
         }
