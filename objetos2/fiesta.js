@@ -1,9 +1,9 @@
 import { stdin as input, stdout as output } from 'process';
 import * as readline from 'readline/promises';
 import Persona from "./persona.js";
-import Agua from './agua.js';
-import Cerveza from './cerveza.js';
-import Pizza from './pizza.js';
+import Agua from './bebidas/agua.js';
+import Cerveza from './bebidas/cerveza.js';
+import Pizza from './alimentos/pizza.js';
 
 const rl = readline.createInterface({ input, output });
 
@@ -63,7 +63,7 @@ let pizzaCuatroQuesos = new Pizza("Cuatro Quesos", "Chicago", "extra grande", 10
 let pizzaMexicana = new Pizza("Mexicana", "panpizza", "grande", 10);
 
 if (await rl.question('¡Ya llegaron las pizzas! ' + invitado.name + ' ¿Vas a querer? (si/no): ') == 'si') {
-    let ans = await rl.question('¿De cuál vas a querer? (Mexicana/Cuatro Quesos)')
+    let ans = await rl.question('¿De cuál vas a querer? (Mexicana/Cuatro Quesos):')
     switch (ans.trim().toLowerCase()) {
         case 'mexicana':
             juan.servePizza(invitado, pizzaMexicana);
@@ -85,6 +85,6 @@ juan.servePizza(pedro, pizzaMexicana);
 
 
 
-
+// jajaja no hiciste nada XD
 
 rl.close();

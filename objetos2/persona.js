@@ -1,5 +1,3 @@
-import Pizza from './pizza.js'
-
 class Persona {
     constructor(name, age, gender, hungry) {
         this.name = name;
